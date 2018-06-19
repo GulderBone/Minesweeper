@@ -156,10 +156,10 @@ public class Menu extends AppCompatActivity {
     }
     // I'm using this only when I want to restore highscores
     private void fillHighScores() {
-            for(int i = 0; i < 10; i++) {
-                highScores[0][i] = "GulderBone";
-                highScores[1][i] = "Easy";
-                highScores[2][i] = 999 + "";
-            }
+        for(int i = 0; i < 10; i++) {
+            highScores[0][i] = "GulderBone";
+            highScores[1][i] = "Easy";
+            highScores[2][i] = 999 + "";
+        }
     }
 }
