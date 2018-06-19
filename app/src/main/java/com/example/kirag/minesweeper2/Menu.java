@@ -19,11 +19,13 @@ public class Menu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
+        GameEngine.getInstance().createGrid(this);
+
         // loading high scores to the global table
         try {
             // I'm using this functions only when i did something wrong and lost my high scores
-            //fillHighScores();
-            //saveScores();
+            fillHighScores();
+            saveScores();
             loadScores();
         } catch (IOException e) {
             e.printStackTrace();
